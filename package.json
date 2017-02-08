@@ -27,7 +27,7 @@
   "scripts": {
     "build": "webpack -d",
     "devStart": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && webpack -d"
   },
   "repository": {
     "type": "git",
