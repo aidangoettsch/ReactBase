@@ -1,4 +1,5 @@
-require('./main.html')
+import './main.html'
+import './test.html'
 
 import React from 'react'
 import {render} from 'react-dom'
