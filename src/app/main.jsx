@@ -2,12 +2,22 @@ require('./main.html')
 
 import React from 'react'
 import {render} from 'react-dom'
+import { Router, Route, Link, browserHistory } from 'react-router'
 
-class App extends React.Component {
+class Home extends React.Component {
   render () {
-    return <p> Hello React!</p>
+    return <Link to='/test.html'>hi</Link>
   }
 }
 
-render(<App />, document.getElementById('app'))
-console.log('hi')
+class Test extends React.Component {
+  render () {
+    return <Link to='/main.html'>bai</Link>
+  }
+}
+
+render((
+  <Router history={browserHistory} >
+    <Route path='/main.html' component={Home} />
+    <Route path='/test.html' component={Test} />
+  </Router>), document.getElementById('app'))
