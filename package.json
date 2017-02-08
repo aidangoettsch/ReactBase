@@ -1,0 +1,27 @@
+{
+  "name": "react-base",
+  "version": "0.1.0",
+  "description": "A base for a Node.JS web application.",
+  "main": "src/app.js",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-router": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "standard": "^8.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LCCNetwork/Reactbase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LCCNetwork/Reactbase/issues"
+  },
+  "homepage": "https://github.com/LCCNetwork/Reactbase#readme"
+}
