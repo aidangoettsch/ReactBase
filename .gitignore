@@ -51,8 +51,8 @@ coverage
 # node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
-build/Release
+# Build
+build/
 
 # Dependency directories
 node_modules
