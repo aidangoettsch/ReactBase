@@ -3,21 +3,56 @@ require('./main.html')
 import React from 'react'
 import {render} from 'react-dom'
 import { Router, Route, Link, browserHistory } from 'react-router'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
-class Home extends React.Component {
+const headerStyle = {
+  color: 'blue'
+}
+
+class App extends React.Component {
   render () {
-    return <Link to='/test.html'>hi</Link>
+    return (
+      <MuiThemeProvider>
+        <Header />
+      </MuiThemeProvider>
+    )
   }
 }
 
-class Test extends React.Component {
+class Header extends React.Component {
   render () {
-    return <Link to='/main.html'>bai</Link>
+    return (
+      <div>
+        <div style={headerStyle} classID='header-wrapper'>
+          <p> Test </p>
+        </div>
+      </div>
+    )
+  }
+}
+
+class Body extends React.Component {
+  render () {
+    return (
+      <div>
+
+      </div>
+    )
+  }
+}
+
+class Footer extends React.Component {
+  render () {
+    return (
+      <div>
+
+      </div>
+    )
   }
 }
 
 render((
   <Router history={browserHistory} >
-    <Route path='/main.html' component={Home} />
-    <Route path='/test.html' component={Test} />
+    <Route path='/main.html' component={App} />
   </Router>), document.getElementById('app'))
