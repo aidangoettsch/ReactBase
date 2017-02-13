@@ -7,18 +7,18 @@ import { Router, Route, Link, browserHistory } from 'react-router'
 
 class Home extends React.Component {
   render () {
-    return <Link to="/test.html">hi</Link>
+    return <Link to='/test.html'> This is the Home component! </Link>
   }
 }
 
 class Test extends React.Component {
   render () {
-    return <Link to="/main.html">bai</Link>
+    return <Link to='/main.html'> This is the Test component! </Link>
   }
 }
 
 render((
   <Router history={browserHistory} >
-    <Route path="/main.html" component={Home}/>
-    <Route path="/test.html" component={Test}/>
+    <Route path='/main.html' component={Home} />
+    <Route path='/test.html' component={Test} />
   </Router>), document.getElementById('app'))
