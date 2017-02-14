@@ -24,6 +24,7 @@
     "extract-text-webpack-plugin": "^2.0.0-rc.3",
     "file-loader": "^0.10.0",
     "html-loader": "^0.4.4",
+    "url-loader": "^0.5.7",
     "node-sass": "^4.5.0",
     "sass-loader": "^5.0.1",
     "standard": "^8.6.0",
@@ -34,7 +35,7 @@
   "scripts": {
     "build": "webpack -d",
     "devStart": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && webpack -d"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,5 @@
-require('./main.html')
+import './main.html'
+import './test.html'
 
 import React from 'react'
 import {render} from 'react-dom'
@@ -61,5 +62,7 @@ class Footer extends React.Component {
 
 render((
   <Router history={browserHistory} >
+<<<<<<< master
     <Route path='/main.html' component={App} />
+=======
   </Router>), document.getElementById('app'))
