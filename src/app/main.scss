@@ -1,0 +1,38 @@
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background: #5C6BC0;
+  height: 50px;
+  width: 100%;
+  margin: auto;
+}
+
+.header-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-decoration: none;
+  height: 100%;
+  float: right;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.header-button:hover {
+  background: #00B0FF;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.24), 0 0 20px 0 rgba(0,0,0,0.19);
+  transition: .15s;
+}
