@@ -16,7 +16,8 @@ class Test extends React.Component {
   }
 }
 
-render((
+render(
+  (
     <Router history={browserHistory} >
       <Route path='/' component={Home} />
       <Route path='/test' component={Test} />
