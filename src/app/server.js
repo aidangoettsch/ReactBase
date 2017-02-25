@@ -14,11 +14,11 @@ app.server = app.listen(3000, function () {
 })
 
 app.get('/', (req, res) => {
-  res.render('main')
+  res.render('app')
 })
 
 app.get('/test', (req, res) => {
-  res.render('test')
+  res.render('app')
 })
 
 app.use((req, res) => {

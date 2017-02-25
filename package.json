@@ -34,7 +34,7 @@
   },
   "scripts": {
     "build": "webpack -d",
-    "start": "webpack -d && node src/app/app.js",
+    "start": "webpack -d && node src/app/server.js",
     "devStart": "webpack-dev-server",
     "test": "standard && webpack -d"
   },

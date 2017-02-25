@@ -1,5 +1,4 @@
-import './main.html'
-import './test.html'
+import './app.html'
 
 import React from 'react'
 import {render} from 'react-dom'
